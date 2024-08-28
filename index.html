@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Encriptado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="page-title">
+        <h1>Encriptador de Mensajes</h1>
+    </header>
+    <div class="container">
+        <div class="left-panel col-8">
+            <div class="input-section">
+                <input type="text" placeholder="Ingrese el texto aquí" id="textInput">
+            </div>
+            <div class="info">
+                Solo letras minúsculas y sin acentos
+            </div>
+            <div class="buttons">
+                <button class="encrypt-btn" onclick="encriptar()">Encriptar</button>
+                <button class="decrypt-btn" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-panel col-4" id="rightPanel">
+            <img src="logo.jpg" alt="Placeholder" id="placeholderImage">
+            <input type="text" readonly value="" id="outputText" style="display: none;">
+            <div class="info-left">
+                Ningun mensaje fue encontrado
+            </div>
+            <div class="info-left">
+                Ingresa el texto que desees encriptar o desencriptar
+            </div>
+            <button class="copy-button" id="copyButton" style="display: none;" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Sitio creado por Andres Vera</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
